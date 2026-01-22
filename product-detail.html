@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Drop Earrings | Lumina Jewelry</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">LUMINA<span>.</span></a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-actions">
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="cart-trigger" onclick="toggleCart()">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="container product-detail-container">
+        <!-- Gallery -->
+        <div class="product-gallery">
+            <div class="gallery-main">
+                <img src="assets/images/earring-diamond.png" alt="Crystal Drop Earrings" id="mainImage">
+            </div>
+        </div>
+
+        <!-- Details -->
+        <div class="product-details">
+            <div class="detail-info">
+                <h1>Crystal Drop Earrings</h1>
+                <p class="detail-price">₹4,999</p>
+                <div class="detail-desc">
+                    <p>Experience the brilliance of our Crystal Drop Earrings. Meticulously crafted to catch the light
+                        from every angle, these earrings are the perfect statement piece for your evening attire.</p>
+                </div>
+
+                <ul class="specs-list">
+                    <li><span>Material:</span> Sterling Silver, Cubic Zirconia</li>
+                    <li><span>Finish:</span> 18k White Gold Plating</li>
+                    <li><span>Closure:</span> Butterfly Back</li>
+                    <li><span>Weight:</span> 5g (Approx)</li>
+                </ul>
+
+                <button class="btn-gold btn-buy"
+                    onclick="addToCart('p2', 'Crystal Drop Earrings', 4999, 'assets/images/earring-diamond.png')">Add to
+                    Cart</button>
+
+                <div style="margin-top: 2rem; font-size: 0.9rem; color: #666;">
+                    <p><i class="fas fa-truck"></i> Free Shipping on all orders</p>
+                    <p style="margin-top: 0.5rem;"><i class="fas fa-undo"></i> 30-Day Returns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">You May Also Like</h2>
+            </div>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <a href="shop.html">
+                        <img src="assets/images/earring-gold.png" alt="Gold Sphere Studs" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="shop.html">Gold Sphere Studs</a></h3>
+                        <p class="product-price">₹2,499</p>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <a href="shop.html">
+                        <img src="assets/images/earring-pearl.png" alt="Pearl Halo Hoops" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="shop.html">Pearl Halo Hoops</a></h3>
+                        <p class="product-price">₹3,299</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>LUMINA.</h4>
+                    <p>Elevating your style with timeless elegance and modern design.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lumina Jewelry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

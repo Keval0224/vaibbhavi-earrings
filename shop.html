@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Collection | Lumina Jewelry</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">LUMINA<span>.</span></a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-actions">
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html" class="active">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="cart-trigger" onclick="toggleCart()">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 120px; padding-bottom: 2rem; background: var(--bg-secondary);">
+        <div class="container section-header">
+            <h1 class="section-title">All Collections</h1>
+            <p>Explore our full range of handcrafted earrings.</p>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <a href="product-detail.html">
+                        <img src="assets/images/earring-gold.png" alt="Gold Sphere Studs" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="product-detail.html">Gold Sphere Studs</a></h3>
+                        <p class="product-price">₹2,499</p>
+                        <button class="btn-gold btn-buy"
+                            onclick="addToCart('p1', 'Gold Sphere Studs', 2499, 'assets/images/earring-gold.png')">Add
+                            to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <a href="product-detail.html">
+                        <img src="assets/images/earring-diamond.png" alt="Crystal Drop Earrings" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="product-detail.html">Crystal Drop Earrings</a></h3>
+                        <p class="product-price">₹4,999</p>
+                        <button class="btn-gold btn-buy"
+                            onclick="addToCart('p2', 'Crystal Drop Earrings', 4999, 'assets/images/earring-diamond.png')">Add
+                            to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <a href="product-detail.html">
+                        <img src="assets/images/earring-pearl.png" alt="Pearl Halo Hoops" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="product-detail.html">Pearl Halo Hoops</a></h3>
+                        <p class="product-price">₹3,299</p>
+                        <button class="btn-gold btn-buy"
+                            onclick="addToCart('p3', 'Pearl Halo Hoops', 3299, 'assets/images/earring-pearl.png')">Add
+                            to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 4 (Duplicate for demo) -->
+                <article class="product-card">
+                    <a href="product-detail.html">
+                        <img src="assets/images/earring-gold.png" alt="Minimalist Gold Bar" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="product-detail.html">Minimalist Gold Bar</a></h3>
+                        <p class="product-price">₹1,899</p>
+                        <button class="btn-gold btn-buy"
+                            onclick="addToCart('p4', 'Minimalist Gold Bar', 1899, 'assets/images/earring-gold.png')">Add
+                            to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 5 (Duplicate for demo) -->
+                <article class="product-card">
+                    <a href="product-detail.html">
+                        <img src="assets/images/earring-diamond.png" alt="Solitaire Studs" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="product-detail.html">Solitaire Studs</a></h3>
+                        <p class="product-price">₹5,999</p>
+                        <button class="btn-gold btn-buy"
+                            onclick="addToCart('p5', 'Solitaire Studs', 5999, 'assets/images/earring-diamond.png')">Add
+                            to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 6 (Duplicate for demo) -->
+                <article class="product-card">
+                    <a href="product-detail.html">
+                        <img src="assets/images/earring-pearl.png" alt="Classic Pearl Drops" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="product-detail.html">Classic Pearl Drops</a></h3>
+                        <p class="product-price">₹2,899</p>
+                        <button class="btn-gold btn-buy"
+                            onclick="addToCart('p6', 'Classic Pearl Drops', 2899, 'assets/images/earring-pearl.png')">Add
+                            to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>LUMINA.</h4>
+                    <p>Elevating your style with timeless elegance and modern design.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                        <li><a href="#">Gold Collection</a></li>
+                        <li><a href="#">Diamond Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Care Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lumina Jewelry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

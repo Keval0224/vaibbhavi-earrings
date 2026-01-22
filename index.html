@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover elegant handcrafted earrings for every occasion. Luxury jewelry collection.">
+    <title>Lumina | Elegant Earrings</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">LUMINA<span>.</span></a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-actions">
+                <nav class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="cart-trigger" onclick="toggleCart()">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Elegant Earrings for Every Occasion</h1>
+                <p>Discover our handcrafted collection of premium jewelry designed to make you shine.</p>
+                <div class="hero-buttons">
+                    <a href="shop.html" class="btn-primary">Shop Now</a>
+                    <a href="#featured" class="btn-secondary">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section id="featured" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">New Arrivals</span>
+                <h2 class="section-title">Featured Collection</h2>
+                <p>Curated pieces that define modern elegance.</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <a href="product-detail.html">
+                        <img src="assets/images/earring-gold.png" alt="Gold Sphere Studs" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="product-detail.html">Gold Sphere Studs</a></h3>
+                        <p class="product-price">₹2,499</p>
+                        <button class="btn-gold btn-buy"
+                            onclick="addToCart('p1', 'Gold Sphere Studs', 2499, 'assets/images/earring-gold.png')">Add
+                            to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <a href="product-detail.html">
+                        <img src="assets/images/earring-diamond.png" alt="Crystal Drop Earrings" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="product-detail.html">Crystal Drop Earrings</a></h3>
+                        <p class="product-price">₹4,999</p>
+                        <button class="btn-gold btn-buy"
+                            onclick="addToCart('p2', 'Crystal Drop Earrings', 4999, 'assets/images/earring-diamond.png')">Add
+                            to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <a href="product-detail.html">
+                        <img src="assets/images/earring-pearl.png" alt="Pearl Halo Hoops" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="product-detail.html">Pearl Halo Hoops</a></h3>
+                        <p class="product-price">₹3,299</p>
+                        <button class="btn-gold btn-buy"
+                            onclick="addToCart('p3', 'Pearl Halo Hoops', 3299, 'assets/images/earring-pearl.png')">Add
+                            to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="quote">"Absolutely stunning! The quality is unmatched and they look even better in
+                        person."</p>
+                    <p class="customer">- Priya S.</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="quote">"Fast delivery and beautiful packaging. I wear my gold studs every day."</p>
+                    <p class="customer">- Anjali M.</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="quote">"The perfect gift for my sister. She loved the pearl hoops!"</p>
+                    <p class="customer">- Rohan K.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>LUMINA.</h4>
+                    <p>Elevating your style with timeless elegance and modern design.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                        <li><a href="shop.html">Gold Collection</a></li>
+                        <li><a href="shop.html">Diamond Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Care Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lumina Jewelry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
