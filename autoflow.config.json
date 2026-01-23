@@ -1,11 +1,9 @@
 {
-  "deploymentType": "static",
-  "projectName": "earrings website",
+  "projectName": "earrings-website",
   "gitRepo": "https://github.com/Keval0224/vaibbhavi-earrings.git",
-  "domain": "",
-  "serverIp": "3.107.192.203",
-  "sshUser": "ubuntu",
-  "sshPort": "22",
-  "sshKeyPath": "C:\\Users\\Keval parmar\\OneDrive\\Documents\\jarvis server\\jarvis.pem",
-  "appPort": "3002"
+  "domain": "earrings-website.keval-dev.online",
+  "appPort": "3000",
+  "appType": "static",
+  "deploymentType": "docker",
+  "mode": "domain"
 }
