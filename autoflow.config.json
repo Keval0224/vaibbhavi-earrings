@@ -2,7 +2,7 @@
   "projectName": "earrings-website",
   "gitRepo": "https://github.com/Keval0224/vaibbhavi-earrings.git",
   "domain": "earrings-website.keval-dev.online",
-  "appPort": "3003",
+  "appPort": "3004",
   "appType": "static",
   "deploymentType": "docker",
   "mode": "domain"
