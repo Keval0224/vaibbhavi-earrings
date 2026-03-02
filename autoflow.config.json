@@ -1,6 +1,6 @@
 {
   "projectName": "earrings-website",
-  "gitRepo": "",
+  "gitRepo": "https://github.com/Keval0224/vaibbhavi-earrings.git",
   "domain": "",
   "appType": "static",
   "deploymentType": "docker",
