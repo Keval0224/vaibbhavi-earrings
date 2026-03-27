@@ -1,6 +1,3 @@
-node_modules
 .git
 .env
-dist
-build
 autoflow.config.json

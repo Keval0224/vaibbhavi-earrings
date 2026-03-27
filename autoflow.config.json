@@ -4,5 +4,6 @@
   "domain": "earrings-website.keval-dev.online",
   "appType": "static",
   "deploymentType": "docker",
-  "mode": "domain"
+  "mode": "domain",
+  "strictCI": false
 }
